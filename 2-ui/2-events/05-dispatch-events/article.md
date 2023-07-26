@@ -22,12 +22,12 @@ let event = new Event(type[, options]);
 - *لغو شدن (true/false)*: اگر ویزگی مقدار true را داشت عمل پیش فرض آن لغو میشود، 
 
 ## dispatchEvent
+بعد از اینکه  object  ما ساخته شد، باید آن را روی یک  element صدا بزنیم: `elem.dispatchEvent(event)`.
+سپس handler ها به آن واکنش نشان می دهند که گویی یک رویداد معمولی مرورگر است. اگر رویداد با `bubbles` flag ها ایجاد شده باشد، عمل bubble انجام میشود.
 
-After an event object is created, we should "run" it on an element using the call `elem.dispatchEvent(event)`.
+در مثال زیر رویداد `click` در جاوا اسکریپت آغاز می شود. handler به همان صورت عمل می کند که اگر روی دکمه کلیک شده باشد:
 
-Then handlers react on it as if it were a regular browser event. If the event was created with the `bubbles` flag, then it bubbles.
 
-In the example below the `click` event is initiated in JavaScript. The handler works same way as if the button was clicked:
 
 ```html run no-beautify
 <button id="elem" onclick="alert('Click!');">Autoclick</button>
@@ -38,11 +38,9 @@ In the example below the `click` event is initiated in JavaScript. The handler w
 </script>
 ```
 
-```smart header="event.isTrusted"
-There is a way to tell a "real" user event from a script-generated one.
+راهی برای تشخیص یک رویداد کاربر "واقعی" از رویداد تولید شده توسط اسکریپت وجود دارد.
 
-The property `event.isTrusted` is `true` for events that come from real user actions and `false` for script-generated events.
-```
+ویژگی 'event.isTrusted' برای رویدادهایی که از اقدامات واقعی کاربر ناشی می شوند 'true' و برای رویدادهای تولید شده توسط اسکریپت 'false' است.
 
 ## Bubbling example
 
