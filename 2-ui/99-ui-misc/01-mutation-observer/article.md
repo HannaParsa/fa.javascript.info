@@ -17,6 +17,7 @@ let observer = new MutationObserver(callback);
 
 و بعد observer را به DOM node، attach  می کند.
 
+
 ```js
 observer.observe(node, config);
 ```
