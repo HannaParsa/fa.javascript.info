@@ -6,17 +6,16 @@ libs:
 
 # Selection and Range
 
-In this chapter we'll cover selection in the document, as well as selection in form fields, such as `<input>`.
 
-JavaScript can access an existing selection, select/deselect DOM nodes as a whole or partially, remove the selected content from the document, wrap it into a tag, and so on.
+جاوااسکریپت می‌تواند به یک انتخاب موجود دسترسی داشته باشد، گره‌های DOM را به‌طور کلی یا جزئی انتخاب یا لغو انتخاب کند، محتوای انتخاب‌شده را از سند حذف کند، آن را در یک برچسب قرار دهد و غیره.
 
-You can find some recipes for common tasks at the end of the chapter, in "Summary" section. Maybe that covers your current needs, but you'll get much more if you read the whole text.
+می‌توانید دستور العمل‌هایی برای کارهای رایج در انتهای فصل، در بخش "Summary" بیابید. شاید این نیازهای فعلی شما را پوشش دهد، اما اگر متن کامل را بخوانید، خیلی بیشتر به دست خواهید آورد.
 
-The underlying `Range` and `Selection` objects are easy to grasp, and then you'll need no recipes to make them do what you want.
+درک اشیاء زیربنایی  `Range` و`Selection` آسان است، و پس از آن برای اینکه آنها را به آنچه می‌خواهید انجام دهند، به هیچ دستور العملی نیاز نخواهید داشت.
 
 ## Range
 
-The basic concept of selection is [Range](https://dom.spec.whatwg.org/#ranges), that is essentially a pair of "boundary points": range start and range end.
+فهوم اصلی انتخاب [Range](https://dom.spec.whatwg.org/#ranges) است، که اساساً یک جفت "boundary points"است: شروع محدوده و پایان محدوده.
 
 A `Range` object is created without parameters:
 
