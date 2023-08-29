@@ -32,9 +32,10 @@ let range = new Range();
 
 نکته جالب این است که آرگومان اول `node` در هر دو روش می تواند یک text node یا یelement node عنصر باشد و معنای آرگومان دوم به آن بستگی دارد.
 
-**If `node` is a text node, then `offset` must be the position in its text.**
 
-For example, given the element `<p>Hello</p>`, we can create the range containing the letters "ll" as follows:
+**اگر `node` یک text nodeاست، `offset` باید موقعیتی در متن آن باشد.**
+
+به عنوان مثال، با توجه به عنصر `<p>Hello</p>`، می‌توانیم محدوده حاوی حروف «ll» را به صورت زیر ایجاد کنیم:
 
 ```html run
 <p id="p">Hello</p>
@@ -48,7 +49,7 @@ For example, given the element `<p>Hello</p>`, we can create the range containin
 </script>
 ```
 
-Here we take the first child of `<p>` (that's the text node) and specify the text positions inside it:
+در اینجا اولین فرزند `<p>` را می گیریم (این text node است) و موقعیت های متن را در داخل آن مشخص می کنیم:
 
 ![](range-hello-1.svg)
 
