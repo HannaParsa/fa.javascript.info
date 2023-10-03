@@ -1,4 +1,4 @@
-# JavaScript animations
+# JavaScript انیمیشن های
 
 JavaScript animations can handle things that CSS can't.
 
